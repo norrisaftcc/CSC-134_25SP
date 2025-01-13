@@ -20,3 +20,9 @@ we had to make codespaces today, pick theme, cover commit and synch (push)
 
 TODO: look at the public website to see the changes.
 
+
+Afternoon:
+
+Isaiah - tech is essential -> R&B
+Pranay - gives you back time to focus on your goals ->  guitar
+Gabriel - spread knowledge - Jazz
