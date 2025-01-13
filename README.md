@@ -26,3 +26,5 @@ Afternoon:
 Isaiah - tech is essential -> R&B
 Pranay - gives you back time to focus on your goals ->  guitar
 Gabriel - spread knowledge - Jazz
+
+Javon Green - french fries - Grand Piano
