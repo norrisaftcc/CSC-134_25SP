@@ -16,6 +16,7 @@ using namespace std;
 int main()
 {
    cout << "Hello, CSC 134 Students!" << endl;
-   cout << "Codespaces get easier every time you use them. (imo)";
+   cout << "Codespaces get easier every time you use them. (imo)" << endl;
+   cout << endl;
    return 0;
 }
