@@ -19,6 +19,10 @@ int main() {
     cout << "There are " << num_apples << " apples in stock." << endl;
     cout << "They cost $" << cost_each << " each." << endl;
 
+    // Find out the total price
+    double total_cost = num_apples * cost_each;
+    cout << "The price for all of them is: $" << total_cost << endl;
+
     cout << endl;
     return 0; // no errors
 }
