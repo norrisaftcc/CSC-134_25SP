@@ -9,6 +9,8 @@ using namespace std;
 int main()
 {
    cout << "Hello";
+   // for m1t2, add a few words like who you are
+   // and things you like.
    cout << endl;
    return 0;
 }
