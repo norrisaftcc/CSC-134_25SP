@@ -5,6 +5,7 @@
 // Today we're selling apples
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
   
 int main()
@@ -21,7 +22,12 @@ int main()
     cout << endl;
 
     // Calculate total
+    double total_cost = num_apples * price_each;
+
     // print answer
+    cout << fixed << setprecision(2); // this makes it print 25.00 instead of 25
+    cout << "The total for all " << num_apples << " is $" << total_cost << endl;
+
     return 0; // no errors
 
 }
