@@ -1,33 +1,31 @@
-// CSC 134
-// M2T1
-// norrisa
-// 1/26/2025
-
+// CSC 134 
+// M2T1 - The Apple Orchard Part 2
+// norris
+// 1/29/2025
+// We're going to make the simplest possible
+// "checkout" machine.
 
 #include <iostream>
-
 using namespace std;
-  
-int main()
-{
-    // variables are like mailboxes
-    string name = "Norris";     // replace with your name!
-    int num_apples = 10;        // int are whole numbers, so 3, or 10000000, but not 3.5
-    double price_each = 0.25;   // double stands for floating point, yes that's silly
-                                // double are numbers like 3.50 or 11.00000002
 
-   // think of like an assembly line -- put words or numbers on in the order they should print out.
-   cout << "Welcome to the " << name << " apple farm!" << endl;
-   cout << "We have " << num_apples << " in stock" << endl;
-   cout << "Each apple costs $" << price_each << endl;
+int main() {
+    // Apple sales program
+    // Variables are like mailboxes
+    string farm_name = "Norris"; // you do whatever name you want
+    int num_apples = 10;    // int are whole numbers: 1, 2, 100000, 42
+    double cost_each = 0.25;// twenty five cents, or $0.25.
 
-   // let's do some math
-   double total_price = num_apples * price_each;
+    string user_name;
+    int apples_to_buy;
 
-    // finally, we print the answer
-    cout << "The total price for all " << num_apples;
-    cout << " is: $" << total_price << endl;
-    cout << "Thanks for coming by!" << endl;
+    cout << "Welcome to the " << farm_name << " apple farm!" << endl;
+    cout << "There are " << num_apples << " apples in stock." << endl;
+    cout << "They cost $" << cost_each << " each." << endl;
 
-   return 0;
+    // Find out the total price
+    double total_cost = num_apples * cost_each;
+    cout << "The price for all of them is: $" << total_cost << endl;
+
+    cout << endl;
+    return 0; // no errors
 }
