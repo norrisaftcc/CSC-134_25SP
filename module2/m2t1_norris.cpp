@@ -16,7 +16,7 @@ int main() {
     // Apple sales program
     // Variables are like mailboxes
     string farm_name = "Norris"; // you do whatever name you want
-    int num_apples = 10;    // int are whole numbers: 1, 2, 100000, 42
+    int num_apples = 100;    // int are whole numbers: 1, 2, 100000, 42
     double cost_each = 0.25;// twenty five cents, or $0.25.
     // new variables for M2T1
     string user_name;       // Who is buying apples? 
@@ -40,7 +40,13 @@ int main() {
     cout << "The price for all of them is: $" << total_cost << endl;
 
     // Now let's make a deal
+    cout << "How many apples would you like? "; 
+    cin >> apples_to_buy;
 
+    total_cost = apples_to_buy * cost_each;
+
+    cout << "Thank you! " << apples_to_buy << " apples comes to $" << total_cost  << endl;
+    cout << "Have a nice day!" << endl;
     cout << endl;
     return 0; // no errors
 }
