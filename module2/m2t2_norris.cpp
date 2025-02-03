@@ -19,18 +19,34 @@ using namespace std;
 int main() {
     // Set up the variables
     
-    string store_name = "NorrisCo"; 
-    string food_item = "Burger";
+    string store_name = "Norris' Burgers and Fries"; 
+    string food_name = "burger";
     double food_price = 5.99;   // we can make this input later
     // Do the order
     cout << "Welcome to " << store_name << endl;
-    cout << "You have one " << food_item << ", that is $5.99" << endl;
+    cout << "You have one " << food_name;
+    cout << " which costs $" << food_price << endl;
+
 
     // Figure out the subtotal and total
+    double subtotal, total;
+    subtotal = food_price; // changes if they buy more
+    
+    // Remember tax is two things, the percent and the $
+    double tax_percent = 0.08; // 8% is 8/100
+    double tax_cost = tax_percent * subtotal;
+    total = subtotal + tax_cost;
 
-
-    // print the reciept
+    // Print the receipt
+    cout << setprecision(2) << fixed; // magic words for 2 decimals
+    // \t is the tab key
+    cout << "YOUR RECEIPT" << endl;
+    cout << "-----------------------" << endl;
+    cout << "Subtotal:\t$" << subtotal << endl;
+    cout << "Tax:\t\t$" << tax_cost << endl;
+    cout << "-----------------------" << endl;
+    cout << "Total:\t\t$" << total << endl;
     cout << "Have a nice day!" << endl;
-    cout << endl;
+    cout << endl; 
     return 0; // no errors
 }
