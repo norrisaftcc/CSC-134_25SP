@@ -4,6 +4,7 @@
 // 2/10/2025
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -33,6 +34,8 @@ int main() {
     profit = charge - cost; // example: $0.50 box, costs $0.23, so $0.27 profit
 
     // print the results
+    // format the results
+    cout << setprecision(2) << fixed << showpoint;
     cout << "A crate " << length << " by " << width << " by " << height << endl;
     cout << "Is volume: " << volume << endl;
     cout << "It costs:  $" << cost << " to make." << endl;
