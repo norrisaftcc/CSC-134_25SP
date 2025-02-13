@@ -24,24 +24,28 @@ public class NumberGuess {
     final int TOO_HIGH = 2;
     final int CORRECT = 3;
     boolean keepPlaying = true;
+    
+    g.say("Pick a number between 1 and 100 (I won't peek)");
+    playerNumber = g.getInteger();
     while (keepPlaying) {
-        // Guess a number
-        g.say("Pick a number between 1 and 100 (I won't peek)");
-        playerNumber = g.getInteger();
+
         g.say("I guess: " + guess);
         g.say("Enter 1 for too low, 2 for too high, 3 for correct");
         Integer feedback = g.getInteger();
         if (feedback == TOO_LOW) {
-            high = guess;
+            low = guess;
             guess = (low + high) / 2;
         }
         else if (feedback == TOO_HIGH) {
-            low = guess;
+            high = guess;
             guess = (low + high) / 2;
         }
         else if (feedback == CORRECT){
             g.say("Computer wins!");
             keepPlaying = false;
+            if (guess != playerNumber) {
+                g.say("Wait... you let me win, didn't you?");
+            }
         }
         else {
             // shouldn't happen unless player is trolling the computer
