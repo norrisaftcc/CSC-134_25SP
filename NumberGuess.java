@@ -12,6 +12,44 @@ import javax.swing.JOptionPane;
  */
 public class NumberGuess {
 
+    public static void main(String[] args) {
+    // Bake the class into an object so we can use it
+    NumberGuess g = new NumberGuess();
+    // Variables
+    int playerNumber;
+    int low = 1;
+    int high = 100;
+    int guess = (low + high) / 2;
+    final int TOO_LOW = 1;
+    final int TOO_HIGH = 2;
+    final int CORRECT = 3;
+    boolean keepPlaying = true;
+    while (keepPlaying) {
+        // Guess a number
+        g.say("Pick a number between 1 and 100 (I won't peek)");
+        playerNumber = g.getInteger();
+        g.say("I guess: " + guess);
+        g.say("Enter 1 for too low, 2 for too high, 3 for correct");
+        Integer feedback = g.getInteger();
+        if (feedback == TOO_LOW) {
+            high = guess;
+            guess = (low + high) / 2;
+        }
+        else if (feedback == TOO_HIGH) {
+            low = guess;
+            guess = (low + high) / 2;
+        }
+        else if (feedback == CORRECT){
+            g.say("Computer wins!");
+            keepPlaying = false;
+        }
+        else {
+            // shouldn't happen unless player is trolling the computer
+            g.say("I don't even know what's happening any more -- bye");
+            keepPlaying = false;
+        }
+    }
+}
     
     
     
@@ -29,25 +67,19 @@ public class NumberGuess {
         }
         return value;
     }
-    
-    public static void main(String[] args) {
-        // Bake the class into an object so we can use it
-        NumberGuess g = new NumberGuess();
-        
-        // Test Case 1: Ask for a number
-        Integer num1 = g.getInteger();
-    }
-    
+
     public Integer getInteger() {
-        String userInput = JOptionPane.showInputDialog("Enter a whole number (like 42):");
+        String userInput = JOptionPane.showInputDialog("Enter an integer:");
         Integer result = this.process(userInput); // only allow ints
         // Show the answer, or a decent error message
-        if (result != -1) {
-            JOptionPane.showMessageDialog(null, result);
-        }
-        else {
+        if (result == -1) {
             JOptionPane.showMessageDialog(null, userInput + " is not an Integer!");
+            result = this.getInteger();
         }      
-        
+        return result;
+    }
+    
+    public void say(String message) {
+        JOptionPane.showMessageDialog(null, message);
     }
 }
