@@ -1,5 +1,5 @@
 // CSC 134
-// M3T1 
+// M3T1 and M3T2
 // norrisa
 // 2/17/2025
 // Ask the user for the width and length of two rectangles
@@ -30,5 +30,15 @@ int main() {
     cout << "First area is: " << area1 << endl;
     cout << "Second area is: " << area2 << endl;
 
+    // Which is larger?
+    if (area1 > area2) {
+        cout << "The first one is larger." << endl;
+    }
+    else if (area2 > area1) {
+        cout << "The second one is larger." << endl;
+    }
+    else {
+        cout << "They're both the same size." << endl;
+    }
     return 0;
 }
