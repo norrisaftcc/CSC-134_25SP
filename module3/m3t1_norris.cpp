@@ -24,6 +24,11 @@ int main() {
     cin >> wid2;
 
     // Find the area
+    area1 = len1 * wid1;
+    area2 = len2 * wid2;
     // Print the area
+    cout << "First area is: " << area1 << endl;
+    cout << "Second area is: " << area2 << endl;
+
     return 0;
 }
