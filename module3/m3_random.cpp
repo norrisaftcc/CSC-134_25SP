@@ -14,9 +14,10 @@ using namespace std;
 
 int main() {
     cout << "Let's roll some dice!" << endl;
-    int seed;
-    cout << "What's your lucky number? ";
-    cin >> seed;
+    int seed = time(0);
+    cout << "Your seed is: " << seed << endl;
+    //cout << "What's your lucky number? ";
+    //cin >> seed;
     // Seed the RNG
     srand(seed);
 
