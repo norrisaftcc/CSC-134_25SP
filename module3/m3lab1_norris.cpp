@@ -8,11 +8,6 @@ using namespace std;
 
 // beginning of the main() method
 int main() {
-  
-  // this program will ask a question and respond to it.
-  // You should run it, and test it by typing in different values.
-  // Example test values: 1, 2, 3, banana (try all of them)
-
   // declare the variable we need
   int choice; 
 
@@ -20,7 +15,8 @@ int main() {
   cout << "You're in a pokemon battle! ⚡Pikachu vs. 💤Snorlax." << endl;
   cout << "1. Fight" << endl;
   cout << "2. Run"   << endl;
-  cout << "Type 1 or 2: "; 
+  cout << "3. Use Item" << endl;
+  cout << "Type 1,2, or 3: "; 
   cin >> choice;
 
   // using if, make a decision based on the user's choice
@@ -33,12 +29,14 @@ int main() {
   	cout << "You chose to run" << endl;
     cout << "You live to fight another day." << endl;
   }
+  else if (3 == choice) {
+    cout << "You use a potion." << endl;
+    cout << "More here later..." << endl;
+  }
   else {
   	cout << "I'm sorry, that is not a valid choice." << endl;
   }
-
   // finish up
   cout << "Thanks for playing!" << endl; // this runs no matter what they choose
   return 0; // exit without error
-
 } // end of the main() method
