@@ -24,11 +24,12 @@ int main() {
     displayCharacter();
     cout << "Type 'a' to accept, 'r' to reroll." << endl;
     char choice;
+    cin >> choice;
     while (choice == 'r') {
         inputStats();
         displayCharacter();
         cout << "Type 'a' to accept, 'r' to reroll." << endl;
-        char choice;
+        cin >> choice;
     }
     return 0;
 }
