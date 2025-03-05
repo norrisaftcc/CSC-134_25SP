@@ -15,24 +15,29 @@ void question2();
 
 // main
 int main() {
-    cout << "Example of HW" << endl;
-    cout << "1. Question 1" << endl;
-    cout << "2. Question 2" << endl;
-    cout << "0. Exit" << endl;
     int choice;
-    cin >> choice;
-    if (1==choice) {
-        question1();
-    }
-    else if (2==choice) {
-        question2();
-    }
-    else if (0==choice) {
-        cout << "Bye!" << endl;
-        return 0;
-    }
-    else {
-        cout << "Not a valid choice." << endl;
+    bool keep_going = true;
+
+    while (true == keep_going) {
+        cout << "Example of HW" << endl;
+        cout << "1. Question 1" << endl;
+        cout << "2. Question 2" << endl;
+        cout << "0. Exit" << endl;
+        
+        cin >> choice;
+        if (1==choice) {
+            question1();
+        }
+        else if (2==choice) {
+            question2();
+        }
+        else if (0==choice) {
+            cout << "Bye!" << endl;
+            keep_going = false; // exit ASAP
+        }
+        else {
+            cout << "Not a valid choice." << endl;
+        }
     }
     return 0; 
 }
