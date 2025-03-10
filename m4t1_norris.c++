@@ -22,9 +22,12 @@ int main()
     const int MIN_NUM = 1;
     const int MAX_NUM = 10;
     int num = MIN_NUM;
-    
+    unsigned long sq; // holds a much bigger number
+    cout << endl << "Table of Squares" << endl;
+    cout << "----------------" << endl;
     while (num <= MAX_NUM) {
-        cout << num << endl;
+        sq = num * num;
+        cout << num << "\t" << sq << endl;
         num = num + 1;
     }
 
