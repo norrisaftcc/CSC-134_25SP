@@ -25,11 +25,13 @@ int main()
         cout << "Happy Mar" << i << endl;
     }
     */
+   const int MIN_NUM = 1;
+   const int MAX_NUM = 10;
    cout << "Table of Squares" << endl;
    cout << "----------------" << endl;
-   int num = 1;
+   int num = MIN_NUM;
    int sq; // num squared
-   while (num <= 10) {
+   while (num <= MAX_NUM) {
     sq = num * num;
     cout << num << "\t" << sq << endl;
     num = num + 1;
