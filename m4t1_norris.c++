@@ -17,5 +17,16 @@ int main()
         count++; // all do the same thing
     }
     cout << "Finished!" << endl;
+
+    // Part 2 - Table of Squares
+    const int MIN_NUM = 1;
+    const int MAX_NUM = 10;
+    int num = MIN_NUM;
+    
+    while (num <= MAX_NUM) {
+        cout << num << endl;
+        num = num + 1;
+    }
+
     return 0;
 }
