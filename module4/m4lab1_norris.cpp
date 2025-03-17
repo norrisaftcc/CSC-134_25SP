@@ -70,6 +70,6 @@ int main() {
             cout << "Please enter nonzero width and height" << endl;
         }
     } while (good_input == false); // repeat until we have valid data
-
+    cout << "Printing a box " << width << " by " << height << endl;
     
 }
