@@ -35,8 +35,18 @@ int main() {
     // print a square (combine both)
     // TODO: ask the user
     int width, height;
-    cout << "Enter width and height, both >0" << endl;
-    cin >> width >> height;
+    bool good_values = false;
+    do {
+        cout << "Enter width and height, both >0" << endl;
+        cin >> width >> height;
+        if (width > 0 && height > 0) {
+            good_values = true;
+        }
+        else {
+            cout << "Width and height must be >0" << endl;
+        }
+
+    } while (good_values == false); // loop until we get good values!
 
     cout << "Square of " << width << " by " << height << endl;
     for (int v=0; v< height; v++) {
