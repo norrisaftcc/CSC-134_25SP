@@ -59,10 +59,10 @@ int main() {
     int width, height; // both must be > 0
     bool good_input = false;
     do {
-        cout >> "Enter width: ";
-        cin << width;
-        cout >> "Enter height: ";
-        cin << height;
+        cout << "Enter width: ";
+        cin >>  width;
+        cout << "Enter height: ";
+        cin >> height;
         if (width > 0 && height > 0) {
             good_input = true;
         }
@@ -71,5 +71,10 @@ int main() {
         }
     } while (good_input == false); // repeat until we have valid data
     cout << "Printing a box " << width << " by " << height << endl;
-    
+    for (int h=0; h<height; h++) {
+        for (int w=0; w<width; w++) {
+            cout << pixel;
+        }
+        cout << endl;
+    }
 }
