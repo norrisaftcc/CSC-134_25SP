@@ -1,0 +1,108 @@
+:: StoryTitle
+Vincible
+
+
+:: StoryData
+{
+  "ifid": "E9872880-DAA4-4421-86ED-1850E4D5C722",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Game Start",
+  "zoom": 1
+}
+
+
+:: Chapter 1 {"position":"500,150","size":"100,100"}
+\:: Chapter 1 {"position":"500,150","size":"100,100"}
+
+You find yourself at a crossroads.
+
+(if: $powerType is "Super Strength")[
+    [[Use your super strength to clear the path->Super Strength Path]]
+]
+
+(if: $powerType is "Magic")[
+    [[Use your magic to clear the path->Magic Path]]
+]
+
+(if: $powerType is "TK")[
+    [[Use your telekinesis to clear the path->TK Path]]
+]
+
+[[Take the normal path->Normal Path]]
+
+
+:: Create Character {"position":"225,375","size":"200,200"}
+Choose your Character Class
+
+(bg:(gradient: 0, 0,#ffffff,0.5,#e21212,1,#ffffff))[💪 Strong Guy (or Gal)]
+(b4r:"dotted","dotted","none","none")+(b4r-colour:white)[🧙 Wizard]
+
+(text-rotate-x:3)+(text-rotate-y:3)+(text-rotate-z:9)[🧠 Psychic TK Weirdo]
+
+[[Strong->Strong Guy]]
+[[Wizardly->Wizard Dude]]
+[[Weird Brain->TK Dude]]
+
+(dropdown: 2bind $powertype,"Super Strength","Magic","TK")
+
+
+:: Game Start {"position":"125,150","size":"100,100"}
+Game start here
+
+[[Create Character]]
+[[Play]]
+
+
+:: Magic Path {"position":"562.5,275","size":"100,100"}
+
+
+
+:: Normal Path {"position":"812.5,275","size":"100,100"}
+
+
+
+:: Play {"position":"325,150","size":"100,100"}
+This is the game start!
+
+
+Welcome to the adventure! Your character's stats are:
+Strength: $strength
+Agility: $agility
+Intelligence: $intelligence
+
+Power Type: $powerType
+
+[[Begin your journey->Chapter 1]]
+
+
+:: Strong Guy {"position":"0,675","size":"100,100"}
+
+Big buff guy like this
+
+<img src="https://www.slashfilm.com/img/gallery/invincible-season-3-just-introduced-one-of-the-comics-strongest-villains/l-intro-1741611796.jpg" width="400">
+
+
+(set: $characterStats to (datamap: "strength", 10, "agility", 6, "intelligence", 3))
+(set: $strength to 10)
+(set: $agility to 6)
+(set: $intelligence to 3)
+(set: $powerType to "Super Strength")
+
+[[Play]]
+
+
+:: Super Strength Path {"position":"437.5,275","size":"100,100"}
+
+
+
+:: TK Dude {"position":"550,675","size":"100,100"}
+
+
+
+:: TK Path {"position":"687.5,275","size":"100,100"}
+
+
+
+:: Wizard Dude {"position":"200,675","size":"100,100"}
+

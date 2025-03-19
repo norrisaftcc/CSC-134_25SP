@@ -1,0 +1,158 @@
+:: StoryTitle
+Vincible2
+
+
+:: StoryData
+{
+  "ifid": "E9872880-DAA4-4421-86ED-1850E4D5C722",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Game Start",
+  "zoom": 1
+}
+
+
+:: Chapter 1 {"position":"500,150","size":"100,100"}
+\:: Chapter 1 {"position":"500,150","size":"100,100"}
+
+You find yourself at a crossroads.
+
+(if: $powerType is "Super Strength")[
+    [[Use your super strength to clear the path->Super Strength Path]]
+]
+
+(if: $powerType is "Magic")[
+    [[Use your magic to clear the path->Magic Path]]
+]
+
+(if: $powerType is "TK")[
+    [[Use your telekinesis to clear the path->TK Path]]
+]
+
+[[Take the normal path->Normal Path]]
+
+
+:: Create Character {"position":"225,375","size":"200,200"}
+Choose your Character Class
+
+(bg:(gradient: 0, 0,#ffffff,0.5,#e21212,1,#ffffff))[💪 Strong Guy (or Gal)]
+(b4r:"dotted","dotted","none","none")+(b4r-colour:white)[🧙 Wizard]
+
+(text-rotate-x:3)+(text-rotate-y:3)+(text-rotate-z:9)[🧠 Psychic TK Weirdo]
+
+[[Strong->Strong Guy]]
+[[Wizardly->Wizard Dude]]
+[[Weird Brain->TK Dude]]
+
+(dropdown: 2bind $powertype,"Super Strength","Magic","TK")
+
+
+:: Game Start {"position":"125,150","size":"100,100"}
+Game start here
+
+[[Create Character]]
+[[Play]]
+
+
+:: Magic Path {"position":"562.5,275","size":"100,100"}
+
+
+
+:: Normal Path {"position":"812.5,275","size":"100,100"}
+
+
+
+:: Play {"position":"325,150","size":"100,100"}
+This is the game start!
+
+
+Welcome to the adventure! Your character's stats are:
+Strength: $strength
+Agility: $agility
+Intelligence: $intelligence
+
+Power Type: $powerType
+
+[[Begin your journey->Chapter 1]]
+
+
+:: Strong Guy {"position":"0,675","size":"100,100"}
+
+Big buff guy like this
+
+<img src="https://www.slashfilm.com/img/gallery/invincible-season-3-just-introduced-one-of-the-comics-strongest-villains/l-intro-1741611796.jpg" width="400">
+
+
+
+(set: $strength to 10)
+(set: $agility to 6)
+(set: $intelligence to 3)
+(set: $powerType to "Super Strength")
+
+[[Play]]
+
+
+:: Super Strength Path {"position":"437.5,275","size":"100,100"}
+
+
+
+:: TK Dude {"position":"550,675","size":"100,100"}
+(set: $strength to 6)
+(set: $agility to 3)
+(set: $intelligence to 6)
+(set: $powerType to "TK")
+
+
+:: TK Path {"position":"687.5,275","size":"100,100"}
+
+
+
+:: Wizard Dude {"position":"200,675","size":"100,100"}
+(set: $strength to 3)
+(set: $agility to 6)
+(set: $intelligence to 10)
+(set: $powerType to "Magic")
+
+:: Super Strength Path {"position":"700,150","size":"100,100"}
+You use your super strength to lift a massive boulder blocking the path. As you clear the way, you find a hidden cave entrance.
+
+[[Enter the cave->Cave Entrance]]
+
+:: Magic Path {"position":"700,300","size":"100,100"}
+You use your magic to cast a spell that reveals a hidden door in the trees. The door opens to a mystical forest path.
+
+[[Follow the forest path->Mystical Forest]]
+
+:: TK Path {"position":"700,450","size":"100,100"}
+You use your telekinesis to move debris and clear the path. As you proceed, you discover an ancient ruin with strange symbols.
+
+[[Explore the ruins->Ancient Ruins]]
+
+:: Normal Path {"position":"700,600","size":"100,100"}
+You decide to take the normal path. It's a safe and well-trodden route, but you can't shake the feeling that you're missing out on something exciting.
+
+[[Continue on the normal path->Safe Route]]
+
+:: Cave Entrance {"position":"900,150","size":"100,100"}
+The cave is dark and eerie. You can hear the sound of water dripping and the occasional rustle of unseen creatures. Do you dare to venture deeper?
+
+[[Venture deeper into the cave->Deeper Cave]]
+[[Return to the crossroads->Chapter 1]]
+
+:: Mystical Forest {"position":"900,300","size":"100,100"}
+The forest is filled with glowing plants and magical creatures. You feel a sense of wonder and awe as you walk through this enchanted place.
+
+[[Explore the forest->Forest Exploration]]
+[[Return to the crossroads->Chapter 1]]
+
+:: Ancient Ruins {"position":"900,450","size":"100,100"}
+The ruins are ancient and mysterious. The symbols on the walls seem to tell a story, but you can't quite decipher them. Perhaps there's something valuable hidden here.
+
+[[Search for hidden treasures->Treasure Hunt]]
+[[Return to the crossroads->Chapter 1]]
+
+:: Safe Route {"position":"900,600","size":"100,100"}
+The safe route is uneventful, but you make steady progress. You come across a small village where you can rest and gather supplies.
+
+[[Rest in the village->Village Rest]]
+[[Return to the crossroads->Chapter 1]]
