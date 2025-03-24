@@ -5,13 +5,8 @@
 #include <iostream>
 using namespace std;
 
-// TODO:
-// add declarations
 int find_square(int num);
 void print_line(int number, int square);
-
-// finish the functions
-// write main()
 
 int main() {
     // Example: print squares from 1 to 10
