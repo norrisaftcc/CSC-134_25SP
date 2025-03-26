@@ -12,16 +12,31 @@ using namespace std;
 
 // Declare functions here, so main() knows they exist.
 void show_message();
+void greet_user(string name);
+int double_a_number(int number);
 
 // main() here
 int main() {
     cout << "Hello from main()" << endl;
     show_message(); // call the function
-    // done
+    string user = "Bob";
+    greet_user(user); // we're passing the value "Bob", not the actual variable
+    int num;
+    cout << "Enter an integer: ";
+    cin >> num;
+    int answer = double_a_number(num);
+    cout << "Double that is " << answer << endl;
     return 0;
 }
 
 // Define functions here, including full body {}.
 void show_message() {
-    cout << "This is a message" << endl;
+    cout << "This is a message." << endl;
+}
+void greet_user(string name) {
+    cout << "Hello, " << name << endl;
+}
+int double_a_number(int number) {
+    int answer = number * 2;
+    return answer; // must return an int
 }
