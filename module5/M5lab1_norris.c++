@@ -92,7 +92,9 @@ void choice_forest_friends() {
   }
 }
 
-void choice_forest_sneak() { cout << "TODO: Write something here" << endl; }
+void choice_forest_sneak() { 
+  cout << "TODO: Write something here" << endl; 
+}
 
 void choice_go_home() { 
     cout << "You close your eyes and say 'there's no place like home'" << endl; 
