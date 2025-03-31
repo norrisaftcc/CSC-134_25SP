@@ -25,6 +25,9 @@ void choice_front_door();
 void choice_back_door();
 void choice_go_home();
 // TODO: add more choices here
+void choice_warrior();
+void choice_wizard();
+void choice_nothing();
 
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
@@ -52,7 +55,7 @@ void main_menu() {
   } else if (2 == choice) {
     // call choice 2 here
   } else if (3 == choice) {
-    // call choice 3 here
+    choice_go_home();
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -88,7 +91,38 @@ void choice_back_door() {
 }
 
 void choice_go_home() { 
-    cout << "TODO: Write something here" << endl; 
+    cout << "On the way home..." << endl;
+    cout << "🚚 ... 💥" << endl;
+    cout << "You wake up in a mysterious land." << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Learn the sword and become a 🤺 Warrior" << endl;
+    cout << "2. Learn magic and become a 🧙 Wizard" << endl;
+    cout << "3. Decide it's all just a dream, and wait to wake up" << endl;
+    int choice;
+    cin >> choice;
+    if (choice == 1) {
+        choice_warrior();
+    }
+    else if (choice ==2) {
+        choice_wizard();
+    }
+    else if (choice ==3) {
+        choice_nothing();
+    }
 }
 
 // any new choices go here
+void choice_warrior() {
+    cout << "You become a successful warrior" << endl;
+    cout << "***GOOD END***" << endl;
+}
+
+void choice_wizard() {
+    cout << "You become a mysterious wizard" << endl;
+    cout << "***GOOD END***" << endl;
+}
+
+void choice_nothing() {
+    cout << "Unfortunately, when the Dark Wizard attacks, you're still just hanging out" << endl;
+    cout << "***BAD END -- you have died ***" << endl;
+}
