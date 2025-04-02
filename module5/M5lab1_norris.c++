@@ -82,9 +82,7 @@ void choice_forest_friends() {
   cout << "Do you:" << endl;
   cout << "1. Check around back" << endl;
   cout << "2. Give up and go home" << endl;
-  int choice;
-  cout << "Choose: ";
-  cin >> choice;
+  int choice = get_choice(2);
   if (1 == choice) {
     choice_forest_sneak();
   } else if (2 == choice) {
