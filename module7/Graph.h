@@ -164,4 +164,4 @@ public:
    }
 };
 
-#endif
+#endif // GRAPH_H
