@@ -3,9 +3,9 @@ C++ CSC 134 Student facing example
 
 # CSC-134-0001
 
-## End of Semester Demos!
+## End of Semester Demos
 
-Add your link to the list below!
+Thanks to everyone who contributed to our impromptu "game jam". It was a lot of fun. Here's the ones who we got consent to share with the world.
 - Mr Norris - (Pokesense)[https://norrisaftcc.github.io/projects/pokesense/]
 - Lee Tomlinson- (Library Catologue)[https://tomlinsw9207.github.io/]
 - Ricky Brunson - (Poor Man's Pokemon)[https://r-brunson.github.io/]
@@ -21,7 +21,7 @@ Add your link to the list below!
 - peoplesd (Morioh Cho Killer) [https://github.com/Mysxtic/Mysxtic.github.io]
 - KJ322 (Toolbag of Holding) [https://github.com/KJ322/KJ322.github.io]
 - Joshua (Adventure) (Repo TBD)
-- Yours!
+
 
 
 User: Mr. Norris
