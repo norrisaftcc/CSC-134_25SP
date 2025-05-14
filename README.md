@@ -22,7 +22,10 @@ Thanks to everyone who contributed to our impromptu "game jam". It was a lot of 
 - KJ322 (Toolbag of Holding) [https://github.com/KJ322/KJ322.github.io]
 - Joshua (Adventure) (Repo TBD)
 
+## Some other programs not demoed live
 
+- Olivia: (Recommend A Game)[https://github.com/oliviamahaffey/CSC-134/blob/main/M7/M7HW1_OliviaMahaffey.cpp]
+- Luis: (Computer Trivia)[https://github.com/luisdrg/CSC-134/blob/main/module7/M7HW1/M7HW1_RiveraGonzalez.cpp]
 
 User: Mr. Norris
 Passphrase: [REDACTED]
