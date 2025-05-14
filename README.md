@@ -8,7 +8,7 @@ C++ CSC 134 Student facing example
 Add your link to the list below!
 - Mr Norris - (Pokesense)[https://norrisaftcc.github.io/projects/pokesense/]
 - Lee Tomlinson- (Library Catologue)[https://tomlinsw9207.github.io/]
-- Yours!
+- Ricky Brunson - (Poor Man's Pokemon)[https://r-brunson.github.io/]
 
 
 
