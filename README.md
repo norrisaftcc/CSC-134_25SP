@@ -12,6 +12,15 @@ Add your link to the list below!
 - D3didu3ye - Pokemon Sim [https://github.com/D3cidu3ye/CSC134]
 - Brian Vineyard - (Fantasy Choose Your Own Adventure)[https://vinecal4701.github.io/]
 - Justin Larsen - (SugarCube_MyDreamWorld_Final)[https://jhlarsen1.github.io/]
+
+- Acupid-Knight - (Thief: A Haunted Mystery M7HW.c++)[https://github.com/Acupid-Knight/CSC-134]
+- cunning6423 - (Glitchuations)[https://cunning6423.github.io] 
+- JackFTCC - (DND Simulator) [https://JackFTCC.github.io]
+- the three musketeers - (Chazidy, Isaiah, Pranay) (Haunted House) [https://github.com/pranay-nep/twine]
+- lsmelcer (Diamond Shores Casino) [https://lsmelcer.github.io]
+- peoplesd (Morioh Cho Killer) [https://github.com/Mysxtic/Mysxtic.github.io]
+- KJ322 (Toolbag of Holding) [https://github.com/KJ322/KJ322.github.io]
+- Joshua (Adventure) (Repo TBD)
 - Yours!
 
 
