@@ -9,6 +9,7 @@ Add your link to the list below!
 - Mr Norris - (Pokesense)[https://norrisaftcc.github.io/projects/pokesense/]
 - Lee Tomlinson- (Library Catologue)[https://tomlinsw9207.github.io/]
 - Ricky Brunson - (Poor Man's Pokemon)[https://r-brunson.github.io/]
+- D3didu3ye - Pokemon Sim [https://github.com/D3cidu3ye/CSC134]
 - Yours!
 
 
