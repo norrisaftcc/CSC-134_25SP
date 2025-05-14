@@ -12,6 +12,7 @@ Thanks to everyone who contributed to our impromptu "game jam". It was a lot of 
 - D3didu3ye - Pokemon Sim [https://github.com/D3cidu3ye/CSC134]
 - Brian Vineyard - (Fantasy Choose Your Own Adventure)[https://vinecal4701.github.io/]
 - Justin Larsen - (SugarCube_MyDreamWorld_Final)[https://jhlarsen1.github.io/]
+- Mikayla - (CYOA)[https://blakeym3155.github.io/]
 
 - Acupid-Knight - (Thief: A Haunted Mystery M7HW.c++)[https://github.com/Acupid-Knight/CSC-134]
 - cunning6423 - (Glitchuations)[https://cunning6423.github.io] 
@@ -26,6 +27,7 @@ Thanks to everyone who contributed to our impromptu "game jam". It was a lot of 
 
 - Olivia: (Recommend A Game)[https://github.com/oliviamahaffey/CSC-134/blob/main/M7/M7HW1_OliviaMahaffey.cpp]
 - Luis: (Computer Trivia)[https://github.com/luisdrg/CSC-134/blob/main/module7/M7HW1/M7HW1_RiveraGonzalez.cpp]
+- Shaine: (Dungeon RPG)[https://github.com/ShaineR19/CSC-134/tree/main/M7/M7HW1]
 
 User: Mr. Norris
 Passphrase: [REDACTED]
