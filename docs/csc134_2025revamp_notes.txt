@@ -1,0 +1,22 @@
+# Hello World
+
+CSC 134 has been running out of pretty much the same BB files since its inception, with a lot of things added. And, we're moving to Canvas next year. So we are going to dissassemble the entire class, look over all the assignments and notes and slides, and do it over. We'll hopefully get something good -- at minimum, it should be clean and simple to follow. 
+
+2025SP has three sections: face to face, online, and f2f high school. Keeping them on the same rough schedule is probably the sanest thing to do. As such, if we build the first three (or stretch for four) modules, the rest is future me's problem. (mid semester reminder.)
+
+(This is a separate issue, but there's probably a lot of back-of-the-semester 134 material that would work just as well at the front of 249. Keep that in mind.)
+
+## Pacing
+The back half of the class, M5 and on, is aimless, since originally that was where I ended things. I also think we can cut a LOT of reading because come on, really. 
+
+On the other hand, a two week "preview of data structures" where I shill 249 is useful. But it needs to be better hand crafted. More coding, less reading.
+
+"Module Zero" for everybody needs:
+- using the tools (can you screenshot, open and edit files, submit things.) First assignment is a hello world for this reason as the code isn't the point.
+- then make a github account and upload your file to your new repository. Again, this is fundamental to being able to do anything in the class.
+- finding information (explain the issues, regular search, the new ai assisted such as bing deep search and googles gemini results, compared to just asking a LLM.
+- now your students are getting 'power user' status so they can start developer stuff.
+
+While we're at it we're writing a new assignment on the whole github thing
+
+
